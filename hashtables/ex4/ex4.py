@@ -1,6 +1,5 @@
 def has_negatives(a):
     cache = {}
-    result = []
 
     a.sort(reverse = True)
 
@@ -11,10 +10,7 @@ def has_negatives(a):
             if num * -1 in cache:
                 cache[num * -1] = num
     
-    filtered_cache = [(key, cache[key]) for key in cache if cache[key] != 0]
-    
-    for key, value in filtered_cache:
-        result.append(key)
+    result = [key for key in cache if cache[key] != 0]
 
     return result
 

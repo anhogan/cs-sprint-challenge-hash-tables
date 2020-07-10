@@ -1,6 +1,5 @@
 def intersection(arrays):
     cache = {}
-    result = []
 
     for i in range(len(arrays[0])):
         cache[arrays[0][i]] = 1
@@ -12,10 +11,7 @@ def intersection(arrays):
             if array_num[i] in cache:
                 cache[array_num[i]] += 1
 
-    filtered_cache = [(key, cache[key]) for key in cache if cache[key] == len(arrays)]
-    
-    for key, value in filtered_cache:
-        result.append(key)
+    result = [key for key in cache if cache[key] == len(arrays)]
 
     return result
 
