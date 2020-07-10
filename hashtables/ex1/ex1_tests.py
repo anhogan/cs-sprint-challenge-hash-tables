@@ -2,7 +2,6 @@ import unittest
 
 from ex1 import get_indices_of_item_weights
 
-
 class TestEx1(unittest.TestCase):
 
     def test_ex1_1(self):

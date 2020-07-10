@@ -2,7 +2,6 @@ import unittest
 
 from ex3 import intersection
 
-
 class TestEx2(unittest.TestCase):
 
     def test_small(self):

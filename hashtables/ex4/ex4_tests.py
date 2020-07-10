@@ -2,7 +2,6 @@ import unittest
 
 from ex4 import has_negatives
 
-
 class TestEx4(unittest.TestCase):
 
     def test_small(self):
